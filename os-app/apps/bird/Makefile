@@ -13,6 +13,7 @@ install: install-file
 init:;
 
 install-file:
+	mkdir -p $(OS_APP_PATH)/fsimg/share/games
 	ln -sf -T $(abspath $(REPO_PATH)/res) $(OS_APP_PATH)/fsimg/share/games/bird
 
 .PHONY: install-file init

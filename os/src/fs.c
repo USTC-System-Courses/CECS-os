@@ -38,25 +38,30 @@ void init_fs() {
 /* Open a file and return the size of file. */
 int fs_open(const char *pathname, int flags, int mode) {
   // Lab7 TODO: traverse the file_table and find the file
+  return -1;
 }
 
 /* Read `len` bytes of data from the file with `fd` into `buf` */
 size_t fs_read(int fd, void *buf, size_t len) {
   // Lab7 TODO: read the file with fd from offset into buf
+  return -1;
 }
 
 
 /* Write `len` bytes of data from `buf` into the file with `fd` */
 size_t fs_write(int fd, const void *buf, size_t len) {
   // Lab7 TODO: write the file with fd from offset by buf
+  return -1;
 }
 
 /* Seek the file with `fd` from the `offset` based on `whence` */
 size_t fs_lseek(int fd, size_t offset, int whence) {
   // Lab7 TODO: seek the file with fd from the offset based on whence
+  return -1;
 }
 
 /* Close the file with `fd` */
 int fs_close(int fd){
   // Lab7 TODO: close the file with fd
+  return -1;
 }
