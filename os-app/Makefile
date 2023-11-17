@@ -116,7 +116,7 @@ $(ARCHIVE): $(OBJS) libs
 
 ### Pull newlib from github if it does not exist
 ifeq ($(wildcard $(OS_APP_PATH)/libs/libc/Makefile),)
-  $(shell cd $(OS_APP_PATH)/libs && git clone git@github.com:USTC-System-Courses/CECS-newlib.git libc)
+  $(shell cd $(OS_APP_PATH)/libs && git clone https://github.com/USTC-System-Courses/CECS-newlib.git libc)
 endif
 ### Build order control
 app: $(APP)
